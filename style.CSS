@@ -1,0 +1,99 @@
+@keyframes blend {
+    from {background-color: #cc0000;}
+    to {background-color: #3A92EC;}
+  }
+  
+  @keyframes pulse {
+    0% {background-color: #cc0000;} 
+    25% {background-color: #FBBC05;} 
+    50% {background-color: #429C0E;} 
+    100% {background-color: #3A92EC;}
+  }
+  
+  @keyframes rainbow {
+    0% {background-color: #cc0000;} 
+    20% {background-color: #fb7c05;} 
+    40% {background-color: #FBBC05;} 
+    60% {background-color: #429C0E;}
+    80% {background-color: #3A92EC;}
+    100% {background-color: #770fd8;}
+  }
+
+  
+  @keyframes jump {
+    from { right: 0%}
+    to {right: 100%}
+  } 
+  
+  @keyframes jump1 {
+  0% { left: 0%}
+  25% {top: 50%}
+  100% { left:100% ; 
+    top:-100%;}
+    
+  }
+  
+html {
+    background: pink;
+    animation-name:rainbow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+  .practice {
+width: 400px;
+height: 400px;
+background-color: #cc0000;
+position: absolute;
+
+
+  }
+
+
+  .circle {
+    top: 0%;
+    left:0%;
+    width: 120px;
+    height: 120px;
+    border:2px solid black;
+    position: absolute;
+    right: 0;
+    margin: 0px;
+    border-radius: 50%;
+    background-color: #cc0000;
+    animation-name: circle;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  
+  body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 3rem;
+      font-size: 1.125rem;
+      line-height: 1.5;
+      transition: all 725ms ease-in-out;
+  }
+  
+  h1 {
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-bottom: 1rem;
+  }
+  
+  p {
+      margin-bottom: 1rem;
+      color: slate;
+  }
+  
+  button {
+      cursor: pointer;
+      appearance: none;
+      border-radius: 4px;
+      font-size: 1.25rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid navy;
+      background-color: dodgerblue;
+      color: white;
+  }
